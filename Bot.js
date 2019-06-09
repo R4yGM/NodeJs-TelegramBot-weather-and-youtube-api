@@ -2,16 +2,15 @@ const TelegramBot = require('node-telegram-bot-api');
 var request = require("request");
 var requrl = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=";
       //eboty
-//const token = '616200557:AAFZQGmBwSDWkVWGYfMwt1ZZ_oLvsumYFbw';
+//const token = 
 //xrbot
-const token = '696340092:AAE78wI2zTBZZ9ruTdvYZWwQm-uGjfnxpyA'
+const token = 'xxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 const bot = new TelegramBot(token ,{polling: true});
 const http = require('http');
-const meteoId = 'fafb99a0ac531b9d9e2e48dce7aed4c8';
-const videoToken = 'AIzaSyC3hobIG7uMMPwGv2qIlNYlwfhJVoDGXJc';
+const meteoId = 'xxxxxxxxxxxxxxxxxxxx';
+const videoToken = 'xxxxxxxxxxxxxxxxxxxxxxx';
 
-//let apiKey = 'fafb99a0ac531b9d9e2e48dce7aed4c8';
 
 
 bot.onText(/\/echo (.+)/, (msg, match) => {
@@ -147,7 +146,7 @@ bot.on('message', (msg) => {
 });
 
 var videoSrc = "https://www.googleapis.com/youtube/v3/search?part=snippet&q=";
-var yttoken = "&maxResults=5&key=AIzaSyC3hobIG7uMMPwGv2qIlNYlwfhJVoDGXJc";
+var yttoken = "&maxResults=5&key=xxxxxxxxxxxxxxxxxxxxxxx";
 
 bot.onText(/\/video (.+)/, (msg, match)=>{
   const chatId = msg.chat.id;
@@ -229,8 +228,8 @@ var channelURL = "https://www.youtube.com/channel/"
 
 });
 bot.onText(/\/pewdiepieVS/, (msg) =>{
-  var pewURL = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=pewdiepie&fields=items/statistics/subscriberCount&key=AIzaSyC3hobIG7uMMPwGv2qIlNYlwfhJVoDGXJc";
-  var tseriesURL ="https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&fields=items/statistics/subscriberCount&key=AIzaSyC3hobIG7uMMPwGv2qIlNYlwfhJVoDGXJc";
+  var pewURL = "https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=pewdiepie&fields=items/statistics/subscriberCount&key=xxxxxxxxxxxxxxxxxxxxxxx";
+  var tseriesURL ="https://www.googleapis.com/youtube/v3/channels?part=statistics&forUsername=tseries&fields=items/statistics/subscriberCount&key=xxxxxxxxxxxxxxxxxxxxxxx";
   const chatId = msg.chat.id;
   request(pewURL, function(error,response,body){
     var json = JSON.parse(body);
